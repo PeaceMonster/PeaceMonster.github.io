@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(48, 76, 172);
+}
+
+.menuButton {
+    background-color: white;
+    border-radius: 10px;
+    border: 9px solid rgb(255, 145, 0);
+}
+.menuButton:hover {
+    background-color: whitesmoke; 
+}
+.menuButton:active {
+    background-color: rgb(97, 97, 97);
+    border-color: rgb(56, 0, 0);
+    color: white;
+}
+
+
+
+.startScreen {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    column-gap: 5vw;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    ". . . ."
+    ". new load ."
+    ". . . .";
+}
+.startMenu {
+    height: 50%;
+    align-self: center;
+}
+.startNew {
+    grid-area: new;
+}
+.loadPre {
+    grid-area: load;
+}
+
+.container {
+    padding: 2vh 2vw;
+    width: 96vw;
+    height: 96vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
